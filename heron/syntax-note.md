@@ -8,3 +8,12 @@
 - method:
     - ```offer() / poll()```
     - ```size()```
+
+## StringBuilder
+
+- StringBuilder sb = new StringBuilder();
+- sb.append(c);
+
+## Char Operations
+
+- Character.isDigit()
