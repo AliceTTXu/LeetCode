@@ -17,3 +17,7 @@
 ## Char Operations
 
 - Character.isDigit()
+
+## Map
+
+- map.put(d, map.getOrDefault(d, 0) + 1)
