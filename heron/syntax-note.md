@@ -1,6 +1,11 @@
 ## Length
 
 - String: s.length()
+- array ex. int[] arr -> arr.length
+
+## Array
+
+- Arrays.sort(arr) // int[] arr
 
 ## Queue
 
