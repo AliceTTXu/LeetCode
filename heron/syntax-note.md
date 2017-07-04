@@ -50,3 +50,8 @@ Collections.sort(people,new Comparator<Person>(){
 ```
 resultList.toArray(new int[people.length][]);
 ```
+
+Throws exception	Returns special value
+Insert	add(e)	offer(e)
+Remove	remove()	poll()
+Examine	element()	peek()
