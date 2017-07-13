@@ -57,3 +57,5 @@ Remove	remove()	poll()
 Examine	element()	peek()
 
 Arrays.asList
+
+for (Character c : num.toCharArray()) 
