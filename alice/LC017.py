@@ -36,5 +36,30 @@ class Solution(object):
 
         return [''.join([x[i] for x in out]) for i in xrange(digitsCount[-1])]
 
+    def letterCombinations2(self, digits):
+
+        if not digits:
+            return []
+        
+        mapping = {
+            '1': [],
+            '2': ['a', 'b', 'c'],
+            '3': ['d', 'e', 'f'],
+            '4': ['g', 'h', 'i'],
+            '5': ['j', 'k', 'l'],
+            '6': ['m', 'n', 'o'],
+            '7': ['p', 'q', 'r', 's'],
+            '8': ['t', 'u', 'v'],
+            '9': ['w', 'x', 'y', 'z'],
+            '0': []
+        }
+
+        return reduce(lambda curr, next: [x + y for x in curr for y in mapping[next]], digits, [''])
+
+
 s = Solution()
-print s.letterCombinations('0')
+print s.letterCombinations2('0')
+print s.letterCombinations2('')
+print s.letterCombinations2('23')
+
+
