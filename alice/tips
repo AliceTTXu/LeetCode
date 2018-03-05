@@ -1,2 +1,3 @@
 reverse a list: [::-1]
 symetric positions in a list: i and ~i
+create a dummy node to track the head of a linked list: head0 = ListNode(0) \ head0.next = head
