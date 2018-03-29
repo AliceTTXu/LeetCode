@@ -1,3 +1,7 @@
 reverse a list: [::-1]
 symetric positions in a list: i and ~i
 create a dummy node to track the head of a linked list: head0 = ListNode(0) \ head0.next = head
+transform a character to number: ord(char) - ord('a'), a-z -> 0-25
+break point: import pdb; pdb.set_trace()
+when b = Object(), a = b, a and b point to the same thing, to make a a copy of b, from copy import deepcopy, a = deepcopy(b)
+copy a list: new_list = mylist[:]
