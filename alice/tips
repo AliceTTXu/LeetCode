@@ -5,3 +5,4 @@ transform a character to number: ord(char) - ord('a'), a-z -> 0-25
 break point: import pdb; pdb.set_trace()
 when b = Object(), a = b, a and b point to the same thing, to make a a copy of b, from copy import deepcopy, a = deepcopy(b)
 copy a list: new_list = mylist[:]
+cur.next, cur, pre = pre, cur.next, cur  # standard reversing

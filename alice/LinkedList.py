@@ -16,6 +16,15 @@ class ListNode(object):
     def setNext(self, newNext):
     	self.next = newNext
 
-s = ListNode(1)
-s.setNext(ListNode(2))
-print s.getNext().getVal()
+# s = ListNode(1)
+# s.setNext(ListNode(2))
+# print s.getNext().getVal()
+
+dummy = current = ListNode(0)
+
+current.next = ListNode(1)
+current = ListNode(3)
+
+print dummy.val
+print dummy.next.val
+print current.val
