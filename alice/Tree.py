@@ -26,6 +26,24 @@ def BFS(p):
 		if n.right:
 			q.append(n.right)
 
+def printInorder(root): 
+    if root:
+        printInorder(root.left)
+        print(root.val),
+        printInorder(root.right)
+ 
+def printPostorder(root): 
+    if root:
+        printPostorder(root.left)
+        printPostorder(root.right)
+        print(root.val),
+ 
+def printPreorder(root):
+    if root:
+        print(root.val),
+        printPreorder(root.left)
+        printPreorder(root.right)
+
 n1 = TreeNode(1)
 n2 = TreeNode(2)
 n3 = TreeNode(3)

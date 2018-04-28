@@ -41,3 +41,30 @@ class Solution(object):
             out.append(Interval(one_interval_start, one_interval_end))
 
         return out
+
+class Solution(object):
+    def merge(self, intervals):
+        """
+        :type intervals: List[Interval]
+        :rtype: List[Interval]
+        """
+
+        intervals.sort(key = lambda x: x.start)
+
+        out = []
+        current = None
+
+        for x in intervals:
+            if not current:
+                current = x
+            else:
+                if current.end >= x.start:
+                    current = Interval(current.start, max(x.end, current.end))
+                else:
+                    out.append(current)
+                    current = x
+
+        if current:
+            out.append(current)
+
+        return out
