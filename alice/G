@@ -1,0 +1,34 @@
+第一轮（中国小哥）：
+input: head of a linked list, and, an interger array
+output: number of blocks in the linked list
+连续的value在array中出现的node算作一个block，example: 1->2->3->4->5, [2, 3, 5], 2->3是第一个block，5是第二个block，output就是2
+（这道题有两个坑，一个是linked list可能有cycle，要先判断，找到cycle点，第二个坑是有cycle的情况下最后一个block可能会和之前的merge到一起，比如example中的5要是指回2，那就只有一个block了）
+
+第二轮（印度小哥）：
+给了一个场景，上下是岸，中间是河，河里有n*m个方阵排列的小岛，每个小岛和上下左右的邻居之间都有桥连接，最上和最下层的小岛和岸边有桥连接。问了三个问题。
+1. 设计一个class来描述这个问题
+2. 可能会有洪水，每次洪水通过的时候，每座桥有0.5的概率被冲坏，要求写一个函数来simulate一次洪水
+3. 洪水通过之后判断有没有路径可以从岸的一边到另一边
+
+------ 午饭 ------
+美丽的上海小姐姐带吃饭散步~~
+
+第三轮（ABC小哥）：
+1. input: a string, and, a list of tuples
+output: a string
+tuple的格式是(index, old_string, new_string)，要求是将input string从index开始，把old_string替换成new_string，确认过old_string一定会match原始string里的对应部分，example: "abcdefgh", [(1, "bcd", "wxyz")]， 应该返回"awxyzefgh"
+2. input: an integer array, a tuple(i, j)
+output: sum of ith~jth intergers
+
+第四轮（美国小哥）：
+input: an interger array, a string (只有单词和空格，没有标点，前后没有space，就是这个string没有坑)
+output: a string
+array里每个数字代表string里第几个单词，然后按顺序返回对应单词的首字母，example: [5,3,2,6,1], "i am a happy little cat"，返回“laaci”
+followup:
+1. 如果现在有很多由上述函数返回的string，怎么样判断一个string是不是能被划分成english language的一句话
+2. 对于一个上述函数返回的string，计算是valid word的substring的总数
+3. 对于两个string，怎么判断那个更有意义，比如"IIIA"和“GOOD”，前者有四个单词，按substring计数的话有4分，后者只有1分，但显然后者更有意义
+
+第五轮（中国小哥）：
+给定一系列的转换关系，比如a = 0.5b, b = 0.1c，要求每次query两个点，返回他们的ratio，比如query(a, c)，就是0.05
+
